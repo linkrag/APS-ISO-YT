@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>APS UNIP ISO 14001</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <br>
+            <h1 class="text-center">
+                Informações sobre a ISO 14001
+            </h1>
+            <br>
+            <form id="myForm" autocomplete="off">
+                <div class="form-group">
+                    <label for="order">Tópicos:</label>
+                    <select class="form-control" id="search" required>
+                        <option>ISO 14001</option>
+                        <option>Impactos da ISO 14001</option>
+                        <option>Como implantar a ISO 14001</option>
+                        <option>O que é a ISO 14001</option>
+                        <option>Para que serve a ISO 14001</option>
+                        <option>Quem é responsável pela ISO 14001</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button id="btn" class="btn btn-danger btn-block">
+                        Procurar
+                    </button>
+                </div>
+            </form>
+            <table style="display: none;" id="table" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Imagem</th>
+                        <th>Visite o canal!</th>
+                    </tr>
+                </thead>
+                <tbody id="results">
+                </tbody>
+            </table>
+            <div id="pager">
+                <ul id="pagination" class="pagination-sm"></ul>
+            </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="script.js"></script>
+</html>
